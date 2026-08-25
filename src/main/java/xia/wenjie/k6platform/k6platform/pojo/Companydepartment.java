@@ -18,7 +18,7 @@ public class Companydepartment {
     private String name;            //部门名称
     private String number;          //部门人数
     private String introducation;   //部门介绍
-    private String departmentmanager;      //部门经理
+    private String departmentmanager;     //部门经理
     private String telephone;       //经理电话
     private String email;           //邮箱
     private String gradeName;      //班级所属年级

@@ -11,7 +11,7 @@
  Target Server Version : 80046
  File Encoding         : 65001
 
- Date: 24/08/2026 18:33:11
+ Date: 25/08/2026 11:16:29
 */
 
 SET NAMES utf8mb4;
@@ -36,10 +36,10 @@ CREATE TABLE `tb_admin`  (
 -- ----------------------------
 -- Records of tb_admin
 -- ----------------------------
-INSERT INTO `tb_admin` VALUES (1, 'admin', '男', '6ad4664ba23eac71b5ef5e826ea0c6cd', '123@qq.com', '18999999999', '湖北省黄冈市', 'public/61ea081810024fb38ba0e89b8a2dc2a6507k.png');
+INSERT INTO `tb_admin` VALUES (1, 'admin', '男', 'e10adc3949ba59abbe56e057f20f883e', '123@qq.com', '18999999999', '湖北省黄冈市', 'd4b04e4167cf4fdf9701661655d3a327123.png');
 INSERT INTO `tb_admin` VALUES (2, 'xia', '男', 'e10adc3949ba59abbe56e057f20f883e', '111@qq.com', '13119999999', '广州', '7271a1b3675440cc8ab01c4cf5e8438d61k.png');
 INSERT INTO `tb_admin` VALUES (3, 'zhansan', '女', '74e59720dd08b1db45f7152d082c5051', 'qwqw@qq.com', '18999999999', '北京', 'd4b04e4167cf4fdf9701661655d3a327123.png');
-INSERT INTO `tb_admin` VALUES (4, '帆帆帆帆', '女', 'c26be8aaf53b15054896983b43eb6a65', 'qq@qq.com', '13116666666', '倒是方便v但是', '0ef55ea992c74518b8b52229eeef57ee507k.png');
+INSERT INTO `tb_admin` VALUES (4, '帆帆帆帆', '女', '10ed1697617fe7758b4236d5b791286c', 'qq@qq.com', '13116666666', '倒是方便v但是', '0ef55ea992c74518b8b52229eeef57ee507k.png');
 
 -- ----------------------------
 -- Table structure for tb_companydepartment
@@ -55,7 +55,7 @@ CREATE TABLE `tb_companydepartment`  (
   `email` varchar(25) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL,
   `grade_name` varchar(25) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 13 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 14 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of tb_companydepartment
@@ -65,6 +65,7 @@ INSERT INTO `tb_companydepartment` VALUES (7, '运维部', '10', '介绍：运�
 INSERT INTO `tb_companydepartment` VALUES (8, '运维部', '10', '介绍：运维稳健', '刘越', '13111111111', '44@22.com', '深圳');
 INSERT INTO `tb_companydepartment` VALUES (9, '运维部1', '10', '介绍：运维稳健', '刘越', '13111111111', '44@22.com', '深圳');
 INSERT INTO `tb_companydepartment` VALUES (10, '运维部2', '10', '介绍：运维稳健', '刘越', '13111111111', '44@22.com', '深圳');
+INSERT INTO `tb_companydepartment` VALUES (13, '测试部', '20', '软件测试部：功能，性能，安全测试', '刘胜', '18995787176', '请问23@qq.com', '北京');
 
 -- ----------------------------
 -- Table structure for tb_k6script
@@ -102,13 +103,14 @@ CREATE TABLE `tb_operations`  (
   `clazz_name` varchar(25) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL,
   `portrait_path` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 8 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 9 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of tb_operations
 -- ----------------------------
-INSERT INTO `tb_operations` VALUES (5, '1233', 'yw', '男', 'e10adc3949ba59abbe56e057f20f883e', '547879@qq.com', '13119559057', '北京同和街道', '运维部', '7781059a44144295b701d553309c4706123.png');
-INSERT INTO `tb_operations` VALUES (7, 'xia', '士大夫VS的', '女', '123456', '547879@qq.com', '13119559057', '武当山脚下128号', '运维部', '5e785e695d65404bbb48082348d95b40e4b21ffd-3718-4e7e-aa9b-4dcbaeeef742.png');
+INSERT INTO `tb_operations` VALUES (5, '138', '熹微招', '男', 'c56d0e9a7ccec67b4ea131655038d604', '547879@qq.com', '13119559057', '北京同和街道', '运维部', '7781059a44144295b701d553309c4706123.png');
+INSERT INTO `tb_operations` VALUES (7, '139', '刘洪远', '女', 'c56d0e9a7ccec67b4ea131655038d604', '547879@qq.com', '13119559057', '武当山脚下128号', '运维部', '5e785e695d65404bbb48082348d95b40e4b21ffd-3718-4e7e-aa9b-4dcbaeeef742.png');
+INSERT INTO `tb_operations` VALUES (8, '147', '士大夫', '男', 'e10adc3949ba59abbe56e057f20f883e', '547879@qq.com', '13119559057', '八里哇', '运维部1', '4c1b2f32e768401faae737bf12449077e4b21ffd-3718-4e7e-aa9b-4dcbaeeef742.png');
 
 -- ----------------------------
 -- Table structure for tb_report
@@ -147,12 +149,14 @@ CREATE TABLE `tb_tester`  (
   `address` varchar(25) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL,
   `portrait_path` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL,
   `introducation` varchar(25) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL,
+  `clazz_name` varchar(25) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 6 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 7 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of tb_tester
 -- ----------------------------
-INSERT INTO `tb_tester` VALUES (1, NULL, 'tester1', '女', 'e10adc3949ba59abbe56e057f20f883e', NULL, '189995787173', '武汉蔡甸', '7271a1b3675440cc8ab01c4cf5e8438d61k.png', '软件测试人员：熟悉java 编程，性能测试');
+INSERT INTO `tb_tester` VALUES (1, '12', 'tester1', '女', '74e59720dd08b1db45f7152d082c5051', 'test@qq.com', '18999578717', '武汉蔡甸', '7271a1b3675440cc8ab01c4cf5e8438d61k.png', '软件测试人员：熟悉java 编程，性能测试', '测试部');
+INSERT INTO `tb_tester` VALUES (6, '129', '士名洪', '男', 'e10adc3949ba59abbe56e057f20f883e', '547879@qq.com', '13119559057', '北京路', '4f0da36eb36e4884bd3b132690a1c82c507k.png', '士名洪来自武汉', '测试部');
 
 SET FOREIGN_KEY_CHECKS = 1;
