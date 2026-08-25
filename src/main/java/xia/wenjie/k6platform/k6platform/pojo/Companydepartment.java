@@ -7,7 +7,7 @@ import lombok.Data;
 
 /**
  * @project: sms
- * @description: 部门信息  Class班级信息
+ * @description: 部门信息
  */
 @Data
 @TableName("tb_companydepartment")

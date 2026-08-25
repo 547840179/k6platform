@@ -19,6 +19,7 @@ public class Tester {
     private String address;
     private String introducation; //介绍
     private String portraitPath;//存储头像的项目路径
+    private String clazzName;//部门
 
 
 }
