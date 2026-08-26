@@ -11,9 +11,26 @@ spring:
     type: com.zaxxer.hikari.HikariDataSource
     #配置数据库连接属性
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/k6platform_db?characterEncoding=utf-8&serverTimezone=GMT%2B8&userSSL=false
-    username: root
-    password: root
+    #本地
+#    url: jdbc:mysql://localhost:3306/k6platform_db?characterEncoding=utf-8&serverTimezone=GMT%2B8&userSSL=false
+#    username: root
+#    password: root
+    #远程
+    url: jdbc:mysql://rm-cn-cgj4uq3g0000186o.rwlb.rds.aliyuncs.com:3306/libservice?characterEncoding=utf-8&serverTimezone=GMT%2B8&userSSL=false
+    username: maximo
+    password: xbi7EZATDMPaE4Qc
+
+
+
+
+#    软件版本：Mysql 8.0.36
+#    数据库名称：libservice
+#    数据库地址：rm-cn-cgj4uq3g0000186o.rwlb.rds.aliyuncs.com
+#    数据库端口：3306
+#    数据库用户：maximo
+#    数据库密码：xbi7EZATDMPaE4Qc
+
+
 
     #mybatis-plus内置连接池
     hikari:
