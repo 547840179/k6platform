@@ -1,8 +1,10 @@
 {
   "menus": [
     "",
-    "User", 
-    "Role"
+    "User",
+    "Role",
+    "K6script",
+    "Report"
   ],
   "buttons": [
     "User.btn.add",

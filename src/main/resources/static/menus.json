@@ -1,5 +1,49 @@
 [
   {
+    "name": "压测管理",
+    "code": "K6",
+    "children": [
+      {
+        "name": "脚本管理",
+        "path": "k6script/manage",
+        "code": "K6script",
+        "buttons": [
+          {
+            "name": "添加",
+            "code": "K6script.btn.add"
+          },
+          {
+            "name": "修改",
+            "code": "K6script.btn.update"
+          },
+          {
+            "name": "删除",
+            "code": "K6script.btn.remove"
+          }
+        ]
+      },
+      {
+        "name": "报告管理",
+        "path": "report/manage",
+        "code": "Report",
+        "buttons": [
+          {
+            "name": "添加",
+            "code": "Report.btn.add"
+          },
+          {
+            "name": "修改",
+            "code": "Report.btn.update"
+          },
+          {
+            "name": "删除",
+            "code": "Report.btn.remove"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "name": "权限管理",
     "code": "Auth",
     "children": [
